@@ -9,13 +9,18 @@
 </head>
 
 <body>
-    <div id="app"></div>
+    <div data-app id="app">Please wait...</div>
     <script>
         window.$docsify = {
-            //...
+            el: '#app',
+            loadSidebar: true,
+            auto2top: true,
+            search: 'auto'
         }
     </script>
     <script src="//unpkg.com/docsify/lib/docsify.min.js"></script>
+    <script src="//unpkg.com/prismjs/components/prism-bash.min.js"></script>
+    <script src="//unpkg.com/prismjs/components/prism-php.min.js"></script>
 </body>
 
 </html>
